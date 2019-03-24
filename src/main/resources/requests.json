@@ -1,0 +1,21 @@
+REQUEST
+POST - http://localhost:8081/conta
+Content-Type: application/json;charset=UTF-8
+{"agencia":234,
+"numero": 89334,
+"digito":8,
+"tipoConta":"CORRENTE"
+}
+
+RESPONSE
+{"id":2,"tipoConta":"CORRENTE","agencia":234,"numero":89334,"digito":8,"correntista":null}
+
+
+
+REQUEST
+GET - http://localhost:8081/conta/2
+Content-Type: application/json;charset=UTF-8
+
+RESPONSE
+
+{"id":2,"tipoConta":"CORRENTE","agencia":234,"numero":89334,"digito":8,"correntista":null}

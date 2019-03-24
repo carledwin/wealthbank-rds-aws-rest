@@ -8,7 +8,6 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToOne;
-import javax.validation.constraints.Size;
 
 @Entity
 public class Usuario {
@@ -20,7 +19,6 @@ public class Usuario {
 	@Column(unique = true)
 	private String usuario;
 
-	@Size(min = 8, max = 10)
 	private String senha;
 
 	private Date dataCriacao;

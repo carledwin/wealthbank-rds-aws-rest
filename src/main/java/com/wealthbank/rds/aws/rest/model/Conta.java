@@ -6,7 +6,6 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
-import javax.validation.constraints.Size;
 
 import com.wealthbank.rds.aws.rest.enums.TipoContaEnum;
 
@@ -20,15 +19,12 @@ public class Conta {
 	private TipoContaEnum tipoConta;
 
 	@Column(length = 5)
-	@Size(min = 1, max = 5)
 	private Integer agencia;
 
 	@Column(length = 8)
-	@Size(min = 1, max = 8)
 	private Long numero;
 
 	@Column(length = 1)
-	@Size(min = 1, max = 1)
 	private Short digito;
 
 	@ManyToOne

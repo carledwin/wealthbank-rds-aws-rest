@@ -1,18 +1,15 @@
 package com.wealthbank.rds.aws.rest.restcontroller;
 
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.wealthbank.rds.aws.rest.model.Comprovante;
-
 @RestController
-@RequestMapping("/emissaocomprovante")
+@RequestMapping("/")
 public class WealthBankRestController {
 
-	@PostMapping
-	public void salva(@RequestBody Comprovante comprovante) {
-		
+	@GetMapping
+	public String home() {
+		return  "Bem vindo ao Wealth Bank!";
 	}
 }
